@@ -1,0 +1,66 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+p,
+article,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header Styles */
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Article Styles */
+.blog-article {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.blog-article h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.blog-article p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Navigation Styles */
+a.back-link {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* Media Queries for Responsiveness (customize as needed) */
+@media (max-width: 768px) {
+  .blog-article {
+    padding: 10px;
+  }
+}

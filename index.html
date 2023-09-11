@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple Blog</title>
+    <!-- Include Font Awesome CSS using CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Include CSS and JavaScript files -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="">Simple Blog</h1>
+    </header>
+
+    <!-- Navigation links/buttons to overview, detail, and admin pages -->
+    <nav>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="detail-page.html">Detail</a></li>
+        <li><a href="#admin">Admin</a></li>
+      </ul>
+    </nav>
+
+    <!-- Content placeholders -->
+    <main>
+      <section id="overview">
+        <h2>Recent Blog Articles</h2>
+        <div class="blog-article">
+          <h3>Article 1 Title</h3>
+          <p>
+            Summary of Article 1. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.
+          </p>
+          <a href="detail-page.html">Read More</a>
+        </div>
+        <div class="blog-article">
+          <h3>Article 2 Title</h3>
+          <p>
+            Summary of Article 2. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.
+          </p>
+          <a href="#detail/2">Read More</a>
+        </div>
+        <div class="blog-article">
+          <h3>Article 3 Title</h3>
+          <p>
+            Summary of Article 3. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.
+          </p>
+          <a href="#detail/3">Read More</a>
+        </div>
+        <!-- You can add more articles here -->
+      </section>
+
+      <section id="admin">
+        <h2>Add a New Blog Article</h2>
+        <form id="blogForm">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" />
+
+          <label for="author">Author:</label>
+          <input type="text" id="author" name="author" />
+
+          <label for="publicationDate">Publication Date:</label>
+          <input type="date" id="publicationDate" name="publicationDate" />
+
+          <label for="content">Content:</label>
+          <textarea id="content" name="content"></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+
+    <!-- Floating icon for scroll to top -->
+    <div id="scrollToTop">
+      <a href="#" title="Scroll to Top">
+        <i class="fa fa-arrow-up"></i>
+      </a>
+    </div>
+
+    <!-- scripts -->
+    <script src="./scripts/jquery-3.7.1.min.js"></script>
+    <script src="./scripts/magic-scroll.js"></script>
+    <script src="./scripts/scroll-to-top.js"></script>
+    <script src="./scripts/validation.js"></script>
+    <script src="./scripts/animation.js"></script>
+    <script src="./scripts/loading-ajax.js"></script>
+    <script src="./scripts/submitting-ajax.js"></script>
+  </body>
+</html>
